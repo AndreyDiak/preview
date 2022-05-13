@@ -1,0 +1,198 @@
+$text-color: #727272
+$subtext-color: #b5b5b5
+
+$body-color: #fefefe
+$main-bg-color: #1a9598
+$bg-subcolor: #73bdc0
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  vertical-align: baseline
+
+body 
+  background-color: $body-color
+  // overflow: hidden
+
+.container 
+  position: relative
+  margin: 0 auto
+  padding-left: 20px
+  width: 45%
+  border: 1px solid $text-color
+  border-radius: 15px
+
+.portfolio 
+  padding-top: 10px
+  width: 100vw
+  height: 100vh
+  &-photo
+    position: absolute
+    right: 20px
+    top: 20px
+    width: 200px
+    height: 200px
+    // border: 2px solid $text-color
+    border-top-right-radius: 10px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+  &-title 
+    padding: 50px 10px 10px 10px
+    width: calc(30% + 10px)
+    background-color: $main-bg-color
+    text-transform: uppercase
+    font: 30px/1.2 'Open Sans', sans-serif
+    font-weight: 700
+    color: $body-color
+  &__content
+    display: grid
+    grid-template-columns: 1fr 2fr
+    &-profile
+      padding: 5px
+      background-color: $main-bg-color
+      color: #fff
+      font-family: 'Roboto', sans-serif
+    &-about
+      padding: 5px 20px 5px 20px
+  &__name
+    padding-top: 20px
+    padding-bottom: 20px
+    font: 40px/1.2 'Open Sans', sans-serif 
+    &-text 
+      font-weight: 500
+      color: $text-color
+    
+    &-position 
+      font-size: 24px
+      text-transform: uppercase
+      color: $subtext-color
+    
+    &-time, &-salary
+      font-weight: 300
+      font-size: 20px
+  &__footer
+    margin-top: 15px
+    padding: 15px
+    background-color: $main-bg-color
+    color: #e7e7e7
+    font-size: 18px
+    font-weight: 500
+    border-bottom-right-radius: 10px
+    &-list
+      display: flex
+      justify-content: space-between  
+.profile-title
+  padding-top: 5px
+  padding-bottom: 20px
+  font: 22px/1.2 'Open Sans', sans-serif
+  font-weight: 700 
+  position: relative
+  text-transform: uppercase
+  &::after
+    content: ''
+    position: absolute
+    bottom: 10px
+    left: 0
+    width: 100%
+    height: 1px
+    background: #fff
+
+.profile__block
+  margin-bottom: 10px
+  font-weight: 500
+  &-title
+    color: #fff
+    font-size: 20px
+  &-subtitle
+    margin-left: 5px
+    color: $subtext-color
+    font-size: 16px
+
+.about__block
+  margin-bottom: 15px
+  &-title
+    padding-top: 5px
+    padding-bottom: 20px
+    color: $main-bg-color
+    font: 22px/1.2 'Open Sans', sans-serif
+    position: relative
+    text-transform: uppercase
+    font-weight: 700
+    &::after
+      content: ''
+      position: absolute
+      bottom: 10px
+      left: 0
+      width: 200px
+      height: 2px
+      background: $main-bg-color
+  &-list
+    display: flex
+    justify-content: space-between
+  &-content
+    font-family: 'Roboto', sans-serif
+    display: flex
+    flex-direction: column
+    row-gap: 10px
+    &__line
+      display: grid
+      grid-template-columns: 1fr 2.2fr
+      align-items: center
+    &__list
+      &s
+        padding: 10px 10px 10px 20px
+        display: flex
+        justify-content: space-between
+
+  
+
+.line-header
+  color: #000
+  font-weight: 700
+
+.line-text
+  color: $text-color
+  display: flex
+  align-items: end
+  flex-direction: column
+  text-align: end
+
+.line-subtext
+  color: $subtext-color
+  font-size: 14px
+  text-align: end
+  text-align-last: end
+  font-weight: 300
+
+.list-item
+  margin-bottom: 5px
+  color: $text-color
+  font-weight: 300
+  font-size: 16px
+
+.list-title
+  margin-bottom: 5px
+
+
+
+  
+
+
+
+  
